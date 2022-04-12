@@ -122,7 +122,7 @@ hr {
 
 /* line 108, style.scss */
 .main-slider {
-  background: url("/img/iphone.png") no-repeat center right 25%;
+  background: url("../img/iphone.png") no-repeat center right 25%;
   background-color: #1c1e23;
   padding: 103px 0 107px; }
 

@@ -1,0 +1,37 @@
+body {
+  background-color: #f3f5f7;
+  color: #3b3f6a;
+}
+
+
+h1 {
+font-size: 30px;
+line-height: 55px;
+text-align: center;
+margin-bottom: 120px;
+ font-family: 'Arvo', serif;
+}
+
+p {
+  font-size: 20px;
+line-height: 30px;
+color: #686c8b;
+font-weight: 400;
+font-family: 'Noto Sans', sans-serif;
+text-align: center;
+}
+
+.why-list {text-align:center}
+
+.why-list__title {
+  font-size: 22px;
+line-height: 30px;
+text-align: center;
+margin-bottom: 24px;
+ font-family: 'Arvo', serif;
+}
+
+.why-list__img {
+  margin-bottom: 50px;
+  height: 147px;
+}

@@ -1,0 +1,129 @@
+* {
+  font-size: 14px;
+  color: #343e5c;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-size: 42px;
+  color: #ffffff;
+  font-weight: 900;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.container {
+  max-width: 1175px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+}
+.header_main-menu {
+  margin: 30px auto 32px;
+}
+
+.header_submenu {
+  padding: 23px 0;
+}
+
+.header_main-menu,
+.cart a,
+.header_submenu,
+.menu_submenu__list,
+.support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_main__link {
+  &:active,
+  &:focus,
+  &:hover {
+    font-weight: 900;
+  }
+}
+.menu_main__list-link {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_main__list-link li:nth-last-child(n + 2),
+.menu_submenu__list li:nth-last-child(n + 2) {
+  margin-right: 30px;
+}
+
+.cart_text {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 7px;
+}
+.cart_counters {
+  background-color: #e3e8f0;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.btn__sign-in {
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 2px solid #e3e8f0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 9px 15px;
+}
+
+hr {
+  border: 1px solid #f0f2f7;
+}
+
+.menu_submenu__list-link {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #b9bed1;
+  text-transform: uppercase;
+  &:active,
+  &:focus,
+  &:hover {
+    color: #343e5c;
+  }
+}
+
+.support_link {
+  margin-right: 32px;
+}
+.search {
+  margin-right: 38px;
+}
+
+.main-slider {
+  background: url("/img/iphone.png") no-repeat center right 25%;
+  background-color: #1c1e23;
+  padding: 103px 0 107px;
+}
+.slider__text {
+  margin-left: 100px;
+}
+.slider__descript {
+  max-width: 450px;
+  margin-bottom: 70px;
+}
+
+.btn_buy {
+  border-radius: 21px;
+  background-color: #2754eb;
+  border: none;
+  padding: 14px 48px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}

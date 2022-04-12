@@ -1,0 +1,146 @@
+/* line 1, style.scss */
+* {
+  font-size: 14px;
+  color: #343e5c;
+  font-weight: 400;
+  font-family: "Montserrat"; }
+
+/* line 8, style.scss */
+h1 {
+  font-size: 42px;
+  color: #ffffff;
+  font-weight: 900; }
+
+/* line 13, style.scss */
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff; }
+
+/* line 18, style.scss */
+.container {
+  max-width: 1175px;
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 24, style.scss */
+header {
+  width: 100%; }
+
+/* line 27, style.scss */
+.header_main-menu {
+  margin: 30px auto 32px; }
+
+/* line 31, style.scss */
+.header_submenu {
+  padding: 23px 0; }
+
+/* line 35, style.scss */
+.header_main-menu,
+.cart a,
+.header_submenu,
+.menu_submenu__list,
+.support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 46, style.scss */
+.menu_main__link:active, .menu_main__link:focus, .menu_main__link:hover {
+  font-weight: 900; }
+
+/* line 52, style.scss */
+.menu_main__list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+/* line 57, style.scss */
+.menu_main__list-link li:nth-last-child(n + 2),
+.menu_submenu__list li:nth-last-child(n + 2) {
+  margin-right: 30px; }
+
+/* line 62, style.scss */
+.cart_text {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 7px; }
+
+/* line 67, style.scss */
+.cart_counters {
+  background-color: #e3e8f0;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-size: 11px;
+  letter-spacing: 1px; }
+
+/* line 75, style.scss */
+.btn__sign-in {
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 2px solid #e3e8f0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 9px 15px; }
+
+/* line 85, style.scss */
+hr {
+  border: 1px solid #f0f2f7; }
+
+/* line 89, style.scss */
+.menu_submenu__list-link {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #b9bed1;
+  text-transform: uppercase; }
+  /* line 94, style.scss */
+  .menu_submenu__list-link:active, .menu_submenu__list-link:focus, .menu_submenu__list-link:hover {
+    color: #343e5c; }
+
+/* line 101, style.scss */
+.support_link {
+  margin-right: 32px; }
+
+/* line 104, style.scss */
+.search {
+  margin-right: 38px; }
+
+/* line 108, style.scss */
+.main-slider {
+  background: url("/img/iphone.png") no-repeat center right 25%;
+  background-color: #1c1e23;
+  padding: 103px 0 107px; }
+
+/* line 113, style.scss */
+.slider__text {
+  margin-left: 100px; }
+
+/* line 116, style.scss */
+.slider__descript {
+  max-width: 450px;
+  margin-bottom: 70px; }
+
+/* line 121, style.scss */
+.btn_buy {
+  border-radius: 21px;
+  background-color: #2754eb;
+  border: none;
+  padding: 14px 48px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff; }

@@ -35,3 +35,8 @@ margin-bottom: 24px;
   margin-bottom: 50px;
   height: 147px;
 }
+
+@media (max-width:768px){
+  .why-list__item {margin-bottom: 70px;}
+  
+}

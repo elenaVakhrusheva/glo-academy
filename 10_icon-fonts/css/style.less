@@ -1,0 +1,126 @@
+/*mixin style*/
+
+@dark-text:#000;
+@light-text:#fff;
+@font-family: 'Open Sans', sans-serif;
+@bg-blue:#4eb1f7;
+@bg-lila:#c048f8;
+@bg-dark-blue:#817eff;
+@bg-pink:#f74670;
+
+body {
+font-family:@font-family;
+
+}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?dmfeaw');
+  src:  url('../fonts/icomoon.eot?dmfeaw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dmfeaw') format('truetype'),
+    url('../fonts/icomoon.woff?dmfeaw') format('woff'),
+    url('../fonts/icomoon.svg?dmfeaw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 48px;
+  margin-bottom: 19px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-vimeo:before {
+  content: "\eaa0";
+}
+.icon-svg:before {
+  content: "\eae9";
+}
+
+
+
+h1 {
+font-size: 50px;
+line-height: 46px;
+color: @dark-text;
+font-weight: 600;
+text-align: center;
+}
+
+.h1-color {
+color:#fc6744; 
+}
+
+p {
+font-size: 16px;
+line-height: 24px;
+color:lighten(@dark-text, 25.5%);
+font-weight: 400;
+text-align: center;
+}
+
+.process-wrap {
+  background-color: #4eb1f7;
+  color:@light-text;
+  padding:48px 45px 70px 45px;
+}
+
+.process-wrap__title {
+font-size: 20px;
+line-height: 42px;
+font-weight: 600;
+}
+
+.process-wrap__text {
+font-size: 15px;
+line-height: 22px;
+font-weight: 400;
+}
+
+.btn-more {
+  background: @light-text;
+  padding:21px 50px;
+  border-radius: 27px;
+filter: drop-shadow(1.042px 5.909px 7px rgba(20,20,21,0.09));
+}
+
+.item-center {
+  text-align: center;
+}
+
+.bg-lila {
+  background:  @bg-lila;
+}
+.bg-blue {
+  background: @bg-blue;
+}
+.bg-dark-blue {
+  background: @bg-dark-blue;
+}
+.bg-pink {
+  background: @bg-pink;
+}
+
+.text-title {
+  margin-bottom:111px;
+}

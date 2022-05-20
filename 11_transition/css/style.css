@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-weight: 100;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 15px;
+}
+
+.image-btn {
+	  color: #fff;
+    background-color: #6b284e;
+		transition: background-color 0.6s, border 2s;
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin: 40% auto;
+		overflow: hidden;
+		border:1px solid #6b284e;
+}
+.image {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+}
+
+
+.image:hover .image-btn {
+	transition: all 2s;
+	border:1px solid #fff;
+	background-color: transparent;
+	cursor:pointer;
+}
+
+.image-two .image-btn  { 
+	transition: 0.2s;
+	opacity: 0; 
+}
+
+.image-three .image-btn,
+.image-four .image-btn {
+	opacity: 0;
+}
+
+
+
+.image-one {
+	background: url(../img/1.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-two {
+	background: url(../img/2.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-three {
+	background: url(../img/3.jpg) center no-repeat;
+	background-size: cover;
+	transition: 0.5s;
+}
+.image-four {
+	background: url(../img/4.jpg) center no-repeat;
+	background-size: cover;
+	transition: 5s;
+}
+
+.image-two:hover .btn-hover {
+	opacity: 1;
+	visibility: visible;
+	transform:  translateY(10px);
+}
+
+.image-three:hover .btn-hover{
+	opacity: 1;
+  transform: rotate(720deg);
+}
+
+.image-four:hover  .btn-hover {
+	transform: translate(1%);
+	opacity: 1;
+}

@@ -1,0 +1,108 @@
+section#comments {
+  background-color: #fff;
+  border:2px solid #245732;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100vh;
+  margin-top: 100px;
+}
+
+.show-link {
+  padding: 10px;
+  margin: 0 auto;
+  width: 100vh;
+  margin-top: 100px;
+  display: flex;
+  padding: 10px;
+  border:1px solid #faea0d;  
+  transition-property: background-color 2s;  
+}
+
+.show-link a {
+  color: #000;
+  transition-property:color 2s;
+}
+
+.block-text__element:target {
+  display: block;
+} 
+
+.show-link:hover{
+  background-color:#faea0d; 
+  transition: 2s;
+}
+
+.show-link:hover a {
+color: #fff;
+transition: 0.5s;
+}
+
+
+
+.text-link {
+  width: 500px;margin: 0 auto;
+}
+
+#comments:not(:target) {
+    display: none;
+}
+
+#close-menu:target {
+  display: block;
+}
+
+.hide-link {
+  color:#245732;
+}
+
+
+/* === меню === */
+
+.menu {
+    background-color: #faea0d;
+    display: block;
+    top: 0;
+    z-index: 99;
+    right: 0;
+    margin: 30px 0 0 0;
+    position: absolute;
+}
+
+.close {
+      float: right;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    margin: -35px 0 0 0;
+    background-color: #faea0d;
+    padding: 5px 15px;
+}
+
+.close-menu__link {
+  border: 1px solid #fff;
+    display: block;
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 5px;
+    transition: background-color, color;
+}
+.close-menu__link:hover {
+  background-color:#fff;
+  color:#faea0d;
+}
+
+.close-menu__link a {
+  color:#fff;
+  
+}
+.close-menu__link a:hover  {
+  color:#faea0d;
+  transition: 0.2s;
+}
+
+#close-menu:target {
+    display: block;
+}
+#close-menu:not(:target) {
+    display: none;
+}

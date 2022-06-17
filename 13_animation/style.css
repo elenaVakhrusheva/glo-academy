@@ -1,0 +1,49 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: anim-color;              /*название анимации*/
+  animation-duration: 5s;                  /*продолжительность анимации*/
+  animation-timing-function: ease;         /*тип анимации*/
+  animation-delay: 2s;                     /*задержка анимации*/
+  animation-iteration-count:2 ;             /*количество повторений анимации*/
+  animation-duration:reverse;              /*направление анимации*/
+  /*animation: amin-color 5s ease 2s 2 reverse;    написание анимации одной строкой*/
+  animation: anim-color 5s ease, move 2s ease;   /* общее написание анимации*/
+
+}
+
+
+@keyframes anim-color{                    /*название анимации*/
+  0% {
+    background-color:grey;
+  }
+  100% {
+    background-color:purple;
+  }
+}
+
+@keyframes move{                    /*название анимации*/
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+
+.round {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-top: 10px;
+}
+
+.rectangle {
+  width: 300px;
+  height: 150px;
+  background-color:goldenrod;
+  margin-top: 10px;
+  animation: anim-color 5s ease;
+}

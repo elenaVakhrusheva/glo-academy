@@ -52,7 +52,7 @@ span {
 }
 .item-2,
 .item-6 {
-  background: url('/img/e8ff749d43c890a977c1034b8f6f5ae9-1.jpg') no-repeat center center;
+  background: url('../img/e8ff749d43c890a977c1034b8f6f5ae9-1.jpg') no-repeat center center;
   background-size: contain;
   margin: 14px;
 }
@@ -63,7 +63,7 @@ span {
 .item-7,
 .item-8,
 .item-9 {
-  background: url('/img/8152-1.jpg') no-repeat center center;
+  background: url('../img/8152-1.jpg') no-repeat center center;
   background-size: contain;
   margin: 14px;
 }

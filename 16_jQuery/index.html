@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h2><a href="#menu-link" id="open-menu">Меню</a></h2>
+
+  <div class="menu" id="menu-link">
+    <span class="close-menu">x</span>
+    <ul class="menu-list">
+        <li><a href="#">страница 1</a></li>
+        <li><a href="#">страница 2</a></li>
+        <li><a href="#">страница 3</a></li>
+        <li><a href="#">страница 4</a></li>
+        <li><a href="#">страница 5</a></li>
+      </ul>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+
+  <script>
+    $(document).ready(function(){
+      $('#open-menu').click(function(){  /*обращение к элементу - клик по ссылке*/
+        $(".menu").show(300);            /*	в течении 1/3 секунды покажет элемент с классом menu. */
+      });
+
+      $('#open-menu').dblclick (function(){
+        $('.menu').hide(300);             
+      });
+
+      /*	в течении 1/3 секунды скроет элемент с классом menu при повторном клике на Меню */
+
+
+      $('.close-menu').click (function(){
+        $('.menu').hide(300);           
+      });
+
+      /*	в течении 1/3 секунды покажет элемент с классом menu при клике на крестик с классом close-menu */
+    });
+
+  </script>
+</body>
+</html>

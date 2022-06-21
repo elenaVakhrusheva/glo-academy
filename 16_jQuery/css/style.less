@@ -1,0 +1,51 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.blue {
+  background-color:blue;
+}
+
+
+
+.menu {
+    background: #563131;
+    color: #fff;
+    padding: 15px;
+   /* visibility: hidden;*/
+
+  &-list {
+    list-style-type: none;
+
+    & li {
+      padding: 5px 10px;
+
+      & a{
+        color: #fff;
+
+        &:hover {
+          color:aqua;
+        }
+      }
+    }
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+.close-menu {
+  padding:5px;
+  border:1px solid #fff;
+  cursor:pointer;
+  float:right;
+}
+
+.visible {
+  visibility:visible;
+}

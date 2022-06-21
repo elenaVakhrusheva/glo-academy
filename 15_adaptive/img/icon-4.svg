@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 13" width="39" height="13">
+	<title>икон</title>
+	<defs>
+		<image width="39" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAANCAYAAAAqlHdlAAAAAXNSR0IArs4c6QAAAhJJREFUSEulVcFx4zAMBPXQP1eC/fZHkDqIS0hKSEqIS7iUkJRwLiHpQIY+fsclRH89yJvlEB6QpvK404zHIxIkFotdyDHzFxFtQgjP0zS908rTdd2Tc+6NiC4isi3DhmHYeO9xFzVNsx3H8VLG9H3/FkJ4IiIRkb7cZ+YHIvpDRHMIYe8UnC5M0yTloa7r2Dn3QUR3a+CY+YWIfqezBxF5Le/Z7XZ3bdviHiaiVxE5aEzaQ3HIEc9bcIiTZVn25/N5Lg7phViuMmeKXI3BRlHoo4gcsc7MJ/w5595Pp9Mz1iw4VIHKjyLyqOCYGTSDbt2/AaftCCF8xkuduyeia+JK+5TleVmWbdu2eMcvI+cKTkSc0USknJkB9kWrYeZQY04LgG4TOGgzK/IH/UGbm5qsMnCFJkA3GLtWUwNnjDCLyK/Uom9oZ80YiClyYelGpxk4RKRk6D+EOTdN06vzauDUCFYrpgNVY1QkA4fvx3GMstDnBlyqXC2d6WYFXBxF9vJhGO699zBR1Twph+pO23pZlqW3ZqyCU1eVY6UEZ0BEhxa6go6qjNhzKMp7j9kHQjKdroIrBZyqzQxhnFwL17UsYdIaZAPwse21tWyUwK0/ZSjBmaFJGAe2HUbw8Yth901BGeiSTejvn5kzX4TVkWFnJBgyZ270VeoQ+vsfcHGi11ymHTBsSNM0h2SSqg4rDj7+BdCIuMHVtvxLAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="икон" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

@@ -1,0 +1,223 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+  font-family: 'P22UndergroundPro';
+}
+.first-slide {
+  background: url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
+  /* height: 100vh;*/
+  padding: 2.7rem 0 3.3rem 0;
+}
+.advant-item {
+  background-color: #ffff33;
+  border-radius: 50%;
+  padding: 13px;
+  width: 100%;
+  height: auto;
+  max-width: 60px;
+  margin-bottom: 20px;
+}
+.logo a {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.logo a span {
+  font-weight: 300;
+  font-size: 10px;
+}
+.phone-btn {
+  padding: 19px 14px;
+  font-size: 15px;
+  line-height: 56px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #fff;
+  margin-right: 15px;
+}
+.phone-number {
+  font-size: 25px;
+  line-height: 56px;
+  color: #fff;
+}
+h1 {
+  font-size: 2.05rem;
+  line-height: 2.5rem;
+  color: #ffff33;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2.7rem;
+  margin-bottom: 10px;
+  max-width: 1100px;
+}
+.form-consultant {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2.7rem;
+}
+.form-consultant__title {
+  font-size: 1.2rem;
+  line-height: 1.38rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+.form-consultant label input::-webkit-input-placeholder {
+  font-size: 0.83rem;
+  line-height: 2.5rem;
+  color: #333333;
+}
+.form-consultant__icon {
+  background-color: #333333;
+  padding: 1rem 0.7rem;
+  border-radius: 4px 0 0 4px;
+}
+.form-consultant__icon img {
+  width: 13px;
+  height: 13px;
+}
+.form-consultant__input {
+  border: 1px solid #333333;
+  border-radius: 0 4px 4px 0;
+  padding: 1rem 0.7rem;
+}
+.form-consultant__btn {
+  padding: 1.1rem 2.5rem;
+  background-color: #ffff33;
+  border: 0;
+  -webkit-box-shadow: 0 3px 0 #999900;
+          box-shadow: 0 3px 0 #999900;
+  font-weight: 600;
+}
+.input-group {
+  margin-bottom: 11px;
+}
+ul.plus {
+  list-style-type: none;
+}
+ul.plus li {
+  font-size: 1.1rem;
+  line-height: 1.94rem;
+  color: #ffffff;
+}
+.advant {
+  margin-bottom: 10.38rem;
+}
+.advant__item {
+  text-align: center;
+  font-weight: 500;
+}
+.advant__item p {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.advant__item:not(:last-child) {
+  margin: 1.38rem 0 2.7rem;
+}
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+.col-md-1-5 {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+}
+.number-step {
+  font-size: 5.5rem;
+  line-height: 1.2rem;
+  color: #ffff33;
+  text-align: center;
+  display: block;
+  margin-bottom: 2.2rem;
+  font-weight: 700;
+}
+.text-step {
+  font-weight: 400;
+}
+.form-gorizontal {
+  background-color: #333333;
+  padding: 2.7rem;
+  margin-top: 2.7rem;
+}
+.form-gorizontal .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.input-gorizontal {
+  border: 1px solid #fff;
+  border-radius: 0 4px 4px 0;
+  padding: 1rem 0.7rem;
+  background: transparent;
+}
+.icon-gorizontal {
+  border: 1px solid #fff;
+  border-radius: 4 0 4px 0;
+  padding: 1rem 0.7rem;
+  background: transparent;
+}
+@media (max-width: 768px) {
+  .form-consultant {
+    padding: 0.7rem;
+    text-align: center;
+  }
+  .step {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .step .step-item {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .form-gorizontal .input-group {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (max-width: 576px) {
+  .phone-btn {
+    padding: 10px 5px;
+  }
+  .phone-number {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .plus {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .first-slide {
+    padding: 0.7rem 0 3.3rem 0;
+  }
+  .logo {
+    margin-bottom: 15px;
+  }
+}

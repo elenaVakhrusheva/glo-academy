@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Ответы на вопросы<br><span>Которые нам задают чаще всего</span></h1>
+
+<div class="accordion">
+  <div><a href="#content-1"  class="tab">Сколько времени может занять быстрая уборка 1-х комнатной квартиры?</a></div>
+    <div id="content-1" class="content"><p>Быстрая уборка 1 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 1 часа. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p></div>
+
+  <div><a href="#content-2"  class="tab">Сколько времени может занять быстрая уборка 2-х комнатной квартиры?</a></div>
+    <div id="content-2"  class="content"><p>Быстрая уборка 2 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 2 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p></div>
+
+  <div><a href="#content-3"  class="tab">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a></div>
+    <div  id="content-3"  class="content"><p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p></div>
+
+  <div><a href="#content-4"  class="tab">Сколько времени может занять быстрая уборка 4-х комнатной квартиры?</a></div>
+    <div id="content-4"  class="content"><p>Быстрая уборка 4 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 4 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p></div>
+
+  <div><a href="#content-5"  class="tab">Сколько времени может занять быстрая уборка 5-х комнатной квартиры?</a></div>
+    <div  id="content-5"  class="content"><p>Быстрая уборка 5 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 5 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p></div>
+</div>
+  </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   <script>
+    $(document).ready(function(){
+      var tab = $('.tab'); //переменной tab присваиваем все значения, которые имеют класс tab
+
+
+      //при клике на tab происходит событие
+      tab.click(function(){
+        console.log('клик по табу');
+        var target = $(this).attr('href'); 
+        // создаем переменную, в которую помещаем атрибут того элемента к которому обращаемся
+        console.log('Эта ссылка ведет на ' + target);
+        $('.content').hide();
+        // по-умолчанию скрываем все вкладки
+        $(target).show();
+        // при помощи функции show показываем выбранный элемент
+      });
+    });
+
+
+    
+   </script>
+  
+</body>
+</html>

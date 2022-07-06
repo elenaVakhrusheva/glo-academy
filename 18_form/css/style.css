@@ -41,7 +41,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 .section-form {
-  background: url(/img/bg.png) no-repeat center center;
+  background: url(../img/bg.png) no-repeat center center;
   height: 100vh;
   /* background-size: cover;*/
   background-size: 100% 100%;

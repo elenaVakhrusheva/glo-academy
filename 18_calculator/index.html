@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Calculator</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="calc">
+              <h2>Рассчет стоимости</h2>
+              <label for="card_edition">Выберите тираж</label><br>
+              <select name="edition" id="card_edition" class="form-control">
+                <option value="90">90</option>
+                <option value="120">120</option>
+                <option value="150">150</option>
+                <option value="180">180</option>
+                <option value="210">210</option>
+                <option value="240">240</option>
+                <option value="270">270</option>
+                <option value="300">300</option>
+                <option value="360">360</option>
+                <option value="420">420</option>
+                <option value="510">510</option>
+                <option value="600">600</option>
+                <option value="900">900</option>
+                <option value="1020">1020</option>
+                <option value="1500">1500</option>
+                <option value="3000">3000</option>
+              </select>
+              <br>
+              <label for="card_paper">Выберите бумагу</label>
+              <select name="card_paper" id="card_paper" class="form-control">
+                <!--data-paper-ratio="40,5" это коффицент цены за бумагу-->
+                <option data-paper-ratio="6.8" value="Мелованная белая">Мелованная белая</option>
+                <option data-paper-ratio="40.5" value="Бумага повышенной белизны">Бумага повышенной белизны</option>
+                <option data-paper-ratio="45" value="Presting Лен">Presting Лен</option>
+              </select>
+              <br>
+              <label for="card_color">Выберите цветность</label>
+              <select name="card_color" id="card_color" class="form-control">
+                <option data-print="14" data-print-file="110" data-color="1" value="Одностороняя ч/б">Одностороняя ч/б</option>
+                <option data-print="28"  data-print-file="220" data-color="2"  value="Двухстороняя ч/б">Двухстороняя ч/б</option>
+                <option data-print="37"  data-print-file="110" data-color="3"  value="Одностороняя цветная">Одностороняя цветная</option>
+                <option data-print="51"  data-print-file="220" data-color="4"  value="Цветная с лицевой, с обратной ч/б">Цветная с лицевой, с обратной ч/б</option>
+                <option data-print="74"  data-print-file="220" data-color="5"  value="Двухстороняя цветная">Двухстороняя цветная</option>
+              </select>
+              <h4>Приблизительная стоимость за тираж:</h4>
+              <p class="price"><span id="final_price">0</span> руб.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-images">
+              <img src="img/1_0.png" alt="Одностороняя ч/б" id="card_1_0">
+              <img src="img/1_1.png" alt="Двухстороняя ч/б" id="card_1_1">
+              <img src="img/4_0.png" alt="Одностороняя цветная" id="card_4_0">
+              <img src="img/4_1.png" alt="Цветная с лицевой, с обратной ч/б" id="card_4_1">
+              <img src="img/4_4.png" alt="Двухстороняя цветная" id="card_4_4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script>
+      //если документ(страница) загружен, то выполняем функцию
+      $(document).ready(function(){
+        //находим элемент с классом calc и все поля select в нем
+        //хотим проверить изменения = change
+        // если поле меняется, то выполним функцию
+        $('.calc select').change(function(){
+          //в переменную edition присвоим значение селекта
+          // при помощи функции val получаем значение из option value
+          $edition = $('select#card_edition').val();
+          // хотим посмотреть выбранное пользователем значение edition
+          //console.log('Пользователь выбрал:' + $edition);
+          $paper = $('select#card_paper').val();
+          //console.log('Пользователь выбрал:' + $paper);
+          $color = $('select#card_color').val();
+          //console.log('Пользователь выбрал:' + $color);
+          $print_file = $('select#card_color option:selected').attr('data-print-file');
+          $paper_ratio = $('select#card_paper option:selected').attr('data-paper-ratio');
+
+          // в переменную зписываем атрибут выбраного цвета 
+          $color_format = $('select#card_color option:selected').attr('data-color');
+          // цена оттиска
+          $print = $('select#card_color option:selected').attr('data-print');
+          // в переменную division запишем тираж визиток = 30шт
+          $division = 30;
+          // в переменную final_edition запишем итоговый тираж
+          $final_edition = $edition/$division;
+          // формула расчета итоговой цены
+          $price = $final_edition * $paper_ratio + parseInt($print_file) * $final_edition * $print;
+          // запишем итоговую сумму в поле вывода суммы
+          $('span#final_price').text($price);
+          //если переменная color-format равно ли утрибуту data-color =1, то надо скрыть все картинки у класса card-images и показать только с атрибутом 1. 
+         if ($color_format == 1) {
+          $('.card-images img').hide();
+          $('#card_1_0').show();
+         }
+         if ($color_format == 2) {
+          $('.card-images img').hide();
+          $('#card_1_1').show('slow');
+         }
+         if ($color_format == 3) {
+          $('.card-images img').hide();
+          $('#card_4_0').show();
+         }
+         if ($color_format == 4) {
+          $('.card-images img').hide();
+          $('#card_4_1').show();
+         }
+        if ($color_format == 5) {
+          $('.card-images img').hide();
+          $('#card_4_4').show();
+         }
+        })
+      })
+    </script>
+  </body>
+</html>

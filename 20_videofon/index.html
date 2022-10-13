@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section data-vide-bg="video/ocean" id="first"> 
+    <h1>Окунись с головой</h1>
+    <div class="container-firstlend" >
+      <a href="#" class="firstlend-btn">кнопка 1</a>
+      <a href="#" class="firstlend-btn">кнопка 2</a>
+      <a href="#" class="firstlend-btn">кнопка 3</a>
+    </div>
+  </section>
+ <section id="second">
+   <div class="container-search">
+      <span>Поиск:</span><input type="search" name="" id="">
+    </div>
+
+    <div class="wrap-myvertical-tabs"> 
+      <div class="myvertical-tabs-content-wrap">
+          <div class="myvertical-tabs-content active">
+            <h2>About Spring</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste autem id possimus hic assumenda voluptatibus, obcaecati facilis quasi ea culpa delectus sed nesciunt doloremque neque beatae rerum esse labore ipsa harum, deserunt sunt impedit ullam eaque. Dolores, earum voluptas officiis odit iure porro, eveniet eaque laudantium alias odio eius.</p>
+          </div>
+          <div class="myvertical-tabs-content">
+            <h2>About Summer</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste autem id possimus hic assumenda voluptatibus, obcaecati facilis quasi ea culpa delectus sed nesciunt doloremque neque beatae rerum esse labore ipsa harum, deserunt sunt impedit ullam eaque. Dolores, earum voluptas officiis odit iure porro, eveniet eaque laudantium alias odio eius.</p>
+          </div>
+          <div class="myvertical-tabs-content">
+            <h2>About Autumn</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste autem id possimus hic assumenda voluptatibus, obcaecati facilis quasi ea culpa delectus sed nesciunt doloremque neque beatae rerum esse labore ipsa harum, deserunt sunt impedit ullam eaque. Dolores, earum voluptas officiis odit iure porro, eveniet eaque laudantium alias odio eius.</p>
+          </div>
+          <div class="myvertical-tabs-content">
+            <h2>About Winter</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste autem id possimus hic assumenda voluptatibus, obcaecati facilis quasi ea culpa delectus sed nesciunt doloremque neque beatae rerum esse labore ipsa harum, deserunt sunt impedit ullam eaque. Dolores, earum voluptas officiis odit iure porro, eveniet eaque laudantium alias odio eius.</p>
+          </div>
+      </div>
+      <ul class="myvertical-tabs">
+          <li class="chosen">Spring</li>
+          <li>Summer</li>
+          <li>Autumn</li>
+          <li>Winter</li>
+      </ul>
+
+  </div>
+ </section>
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery.vide.min.js"></script>
+  <script>
+    jQuery(() => {
+    $(".myvertical-tabs").delegate("li:not(.chosen)", "click", function () {
+          $(this).addClass("chosen").siblings().removeClass("chosen")
+              .parents(".wrap-myvertical-tabs").find(".myvertical-tabs-content")
+              .hide().eq($(this).index()).fadeIn(170);
+      });
+  });
+  </script>
+</body>
+</html>

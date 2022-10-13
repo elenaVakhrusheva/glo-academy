@@ -1,0 +1,124 @@
+body {
+  background-color: #282828;
+  color: #fff;
+}
+h4 {
+  font-size: 20px;
+  margin: 0 0 30px 0;
+}
+.modal-link {
+  font-size: 16px;
+  /* position: absolute;
+    top: 50%;
+    left: 45%;
+    display: block;*/
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 12px 50px;
+  color: #fff;
+  margin-right: 15px;
+}
+.modal-link:hover {
+  background-color: #fff;
+  color: #282828;
+  outline: 1px solid #9f9191;
+  outline-offset: -4px;
+}
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #B9B9B9;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: #808080;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  width: 90%;
+}
+.popup,
+.popup-text {
+  background: #FFDD00;
+  display: block;
+  width: 300px;
+  height: auto;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: сenter;
+  color: #333;
+  padding: 20px;
+  display: none;
+  z-index: 9;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+.popup-overlay,
+.popup-text-overlay {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #282828;
+}
+.popup-close,
+.popup-text-close {
+  color: #333;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 0.8;
+}
+.popup-close:hover,
+.popup-text-close:hover {
+  opacity: 1;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  color: #333;
+  text-decoration: none;
+}
+.modal-img {
+  width: 22px;
+  height: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.forma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+.popup-text {
+  overflow-y: auto;
+  height: 200px;
+}
+.popup-text::-webkit-scrollbar {
+  background-color: #282828;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  width: 12px;
+}

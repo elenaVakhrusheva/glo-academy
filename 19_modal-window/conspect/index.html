@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Window jQuery</title>
+  <!--link rel="stylesheet" href="css/bootstrap.min.css"-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#modal-1" class="modal-link">Ссылка на модальное окно</a>
+
+  <a href="#close" class="popup-overlay">Ссылка на модальное окно</a>
+  <div class="popup">
+    <a href="#close" class="popup-close">&times;</a>
+    <h4>Модальное окно</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed temporibus, excepturi nemo ratione aliquam, consequuntur mollitia accusantium cum beatae maxime neque facilis totam dolores delectus et. Autem consequatur reiciendis commodi veritatis repellat, consectetur incidunt deserunt inventore neque praesentium ullam laborum quod, quae tempore cumque ipsam ea illum illo aliquam dolor molestiae! Fugiat, magnam fugit soluta non at totam praesentium ab modi eius temporibus quam quas libero repellat cupiditate enim labore, sequi fuga quia! Accusantium optio eum sint enim, rem id dolorum at animi labore assumenda et quo alias ut veniam laudantium sapiente omnis ullam iure ea sed aliquam! Fuga et autem necessitatibus consequuntur. Natus enim eveniet esse autem debitis a, velit blanditiis nisi dolore praesentium? Et, aliquam. Eligendi autem provident corrupti illum perferendis adipisci. Vero doloribus dolorum dolorem quas, soluta obcaecati magnam laboriosam facere pariatur enim harum similique nihil, placeat nam alias debitis magni delectus consequuntur! Aspernatur fugit totam harum ea! Eos quae accusantium, beatae praesentium unde sit sunt officiis repudiandae repellendus aut et, provident magni. Iste non adipisci beatae, magni alias modi pariatur, delectus illum vero esse facilis reiciendis accusamus nisi ad eveniet eius impedit quaerat sint. Ducimus eos est beatae delectus vitae cum iusto saepe quae eum ea praesentium incidunt ullam tenetur, eveniet accusantium minima illum laboriosam nam! Alias, deserunt laudantium. Perferendis, debitis rem quibusdam delectus a amet voluptates, itaque sequi voluptatum magni unde ipsam, sint totam obcaecati doloremque? Facere ducimus, neque maiores nisi nam in nesciunt? Numquam porro consequuntur dolorem incidunt? Blanditiis quasi autem ipsam voluptatem quis amet sequi similique molestias commodi. Nam, aliquid. Eius molestias rerum, itaque voluptatum porro pariatur sint animi expedita impedit officiis deserunt architecto? Iusto, corrupti! Eum corrupti sed praesentium iure quidem et sunt, rerum accusamus? Voluptate iure ullam labore dolores dicta debitis, optio neque dolore. Deleniti enim nobis accusamus neque repellat!</p>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+  <script>
+    let link = $('.modal-link');
+    let popup = $('.popup');
+    let close = $('.popup-close');
+    let overlay = $('.popup-overlay');
+    
+    link.click (function(){
+      overlay.show();
+      popup.show();
+    });
+    close.click(function () {
+      overlay.hide();
+      popup.hide();
+    });
+    overlay.click(function () {
+      overlay.hide();
+      popup.hide();
+    });
+  </script>
+</body>
+</html>

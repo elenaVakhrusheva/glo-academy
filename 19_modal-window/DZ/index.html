@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>19 - Всплывающие (модальные) окна на jQuery</title>
+  <!--link rel="stylesheet" href="css/bootstrap.min.css"-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+  <div class="forma">
+    <a href="#modal-1" class="modal-link">Авторизуйся</a> 
+    <a href="#modal-2" class="modal-link-img"><img src="/img/quest.png" alt="Вопрос" class="modal-img"></a>
+  </div>
+  
+  
+
+  <a href="#close" class="popup-overlay"> </a>
+  <div class="popup">
+    <a href="#close" class="popup-close">&times;</a>
+    <h4>Авторизация</h4>
+    <input type="text" placeholder="Логин" >
+    <input type="password" placeholder="Пароль">
+  </div>
+
+  <div class="popup-text">
+    <a href="#close" class="popup-close">&times;</a>
+    <h4>Описание</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi adipisci magnam numquam assumenda architecto tempore quas aliquid quam reiciendis fugit ipsum impedit quo, amet nobis molestias dolor enim nesciunt? Necessitatibus fugit ipsam adipisci! Temporibus culpa deserunt sunt excepturi quos, nisi quas alias similique ad. Aut aliquid eos itaque autem dicta rem quae porro velit illo vero ratione reprehenderit, cumque aliquam! Ipsa unde culpa sint, libero magni vero voluptas et earum, iusto illum minus voluptatum? Odit, culpa, quasi aliquam sequi quisquam voluptatum sed porro a explicabo perspiciatis similique, rerum tenetur? Quo, beatae? Culpa deleniti officia qui, animi earum exercitationem in delectus.</p>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+
+  <script>
+    let link = $('.modal-link');
+    let linkImg = $('.modal-link-img');
+    let popup = $('.popup');
+    let popupText = $('.popup-text');
+    let close = $('.popup-close');
+    let overlay = $('.popup-overlay');
+    
+    link.click (function(){
+      overlay.show();
+      popup.show();
+    });
+    close.click(function () {
+      overlay.hide();
+      popup.hide();
+      popupText.hide();
+    });
+    overlay.click(function () {
+      overlay.hide();
+      popup.hide();
+      popupText.hide();
+    });
+
+    linkImg.click(function(){
+      overlay.show();
+      popupText.show();
+    });
+
+  </script>
+</body>
+</html>

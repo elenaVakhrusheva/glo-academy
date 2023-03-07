@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+}
+
+.parallax-window {
+  height: 50vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10%;
+  color:#fff;
+}

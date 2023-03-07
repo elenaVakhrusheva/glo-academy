@@ -1,0 +1,182 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+header,
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-list__item {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #2d394c;
+  font-size: 16px;
+
+  & a {
+    color: #2d394c;
+  }
+}
+
+.menu-list li:nth-last-child(n+2){
+    margin-right: 30px;
+  }
+
+.logo-img {
+  width:100%;
+  height:auto;
+  margin: 28px 0;
+  max-width: 214px;
+}
+
+.wrapper {
+   background:#65a9d8;
+}
+section#main {
+  background:#65a9d8 url("/img/HandWithIphone.png") right bottom no-repeat;
+  padding: 20% 0 0 0;
+  height:100vh;
+  vertical-align: middle;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #f7f6f2;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 47px;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.main-text {
+  max-width: 525px;
+  margin-left: 32px;
+}
+
+.logo-block {  
+  background:#fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 60px 0;
+  &__item {
+
+    position: relative;
+
+    & img {
+      position: absolute;
+    }
+  }
+}
+
+
+.subtext-input {
+  font-size: 16px;
+  line-height: 133px;
+  color: #f7f7f7;
+  font-weight: 500;
+
+  & span {
+    border-radius: 5px;
+    background-color: #ffce54;  
+    text-transform: uppercase;
+    padding: 10px;
+  }
+}
+
+input[type="email"],
+button[type="submit"] {
+  border-radius: 5px;
+  padding: 19px 24px;
+  font-size: 18px; 
+}
+
+input[type="email"] {
+  background-color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #2d394c;
+  font-weight: 300;
+  margin-right: 35px;
+  
+    &::-webkit-input-placeholder {color:#2d394c;}
+    &::-moz-placeholder          {color:#2d394c;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#2d394c;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#2d394c;}
+}
+
+
+
+button[type="submit"] {
+  background-color: #77c344;  
+  color: #ffffff;
+  font-weight: 500;
+  border:none;
+
+    &:hover {
+      border: 1px solid #fff;
+      background:#8ae34e;
+      cursor:pointer;
+    }
+}
+
+
+
+
+.cloud-block {
+  position: relative;
+  max-width: 1310px;
+  margin: 0 auto;
+  width: 100%;
+
+  &__img {position: relative;}
+}
+ 
+
+.cloud-img__1,
+.cloud-img__2,
+.cloud-img__3,
+.cloud-img__4 {
+  position: absolute;
+}
+
+
+.cloud-img__1{
+  left:0;
+  top:10%;
+}
+.cloud-img__2{
+  right: 0;
+  top:10%;
+}
+.cloud-img__3{
+  left: 36px;
+  bottom: -511px; 
+}
+.cloud-img__4{
+  left: 1300px;
+  bottom: -530px;
+}

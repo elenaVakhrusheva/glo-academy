@@ -1,0 +1,209 @@
+/* line 1, style.less */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+/* line 5, style.less */
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 11, style.less */
+header {
+  background-color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 16, style.less */
+header,
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 23, style.less */
+.menu-list__item {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #2d394c;
+  font-size: 16px;
+}
+/* line 29, style.less */
+.menu-list__item a {
+  color: #2d394c;
+}
+/* line 34, style.less */
+.menu-list li:nth-last-child(n+2) {
+  margin-right: 30px;
+}
+/* line 38, style.less */
+.logo-img {
+  width: 100%;
+  height: auto;
+  margin: 28px 0;
+  max-width: 214px;
+}
+/* line 45, style.less */
+.wrapper {
+  background: #65a9d8;
+}
+/* line 48, style.less */
+section#main {
+  background: #65a9d8 url("/img/HandWithIphone.png") right bottom no-repeat;
+  padding: 20% 0 0 0;
+  height: 100vh;
+  vertical-align: middle;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+/* line 57, style.less */
+h1 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #f7f6f2;
+  font-weight: 700;
+}
+/* line 66, style.less */
+h2 {
+  font-size: 24px;
+  line-height: 47px;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: italic;
+}
+/* line 74, style.less */
+.main-text {
+  max-width: 525px;
+  margin-left: 32px;
+}
+/* line 79, style.less */
+.logo-block {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 60px 0;
+}
+/* line 86, style.less */
+.logo-block__item {
+  position: relative;
+}
+/* line 90, style.less */
+.logo-block__item img {
+  position: absolute;
+}
+/* line 97, style.less */
+.subtext-input {
+  font-size: 16px;
+  line-height: 133px;
+  color: #f7f7f7;
+  font-weight: 500;
+}
+/* line 103, style.less */
+.subtext-input span {
+  border-radius: 5px;
+  background-color: #ffce54;
+  text-transform: uppercase;
+  padding: 10px;
+}
+/* line 111, style.less */
+input[type="email"],
+button[type="submit"] {
+  border-radius: 5px;
+  padding: 19px 24px;
+  font-size: 18px;
+}
+/* line 118, style.less */
+input[type="email"] {
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #2d394c;
+  font-weight: 300;
+  margin-right: 35px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+/* line 125, style.less */
+input[type="email"]::-webkit-input-placeholder {
+  color: #2d394c;
+}
+/* line 126, style.less */
+input[type="email"]::-moz-placeholder {
+  color: #2d394c;
+}
+/* line 127, style.less */
+input[type="email"]:-moz-placeholder {
+  color: #2d394c;
+}
+/* line 128, style.less */
+input[type="email"]:-ms-input-placeholder {
+  color: #2d394c;
+}
+/* line 133, style.less */
+button[type="submit"] {
+  background-color: #77c344;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+}
+/* line 139, style.less */
+button[type="submit"]:hover {
+  border: 1px solid #fff;
+  background: #8ae34e;
+  cursor: pointer;
+}
+/* line 149, style.less */
+.cloud-block {
+  position: relative;
+  max-width: 1310px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 155, style.less */
+.cloud-block__img {
+  position: relative;
+}
+/* line 159, style.less */
+.cloud-img__1,
+.cloud-img__2,
+.cloud-img__3,
+.cloud-img__4 {
+  position: absolute;
+}
+/* line 167, style.less */
+.cloud-img__1 {
+  left: 0;
+  top: 10%;
+}
+/* line 171, style.less */
+.cloud-img__2 {
+  right: 0;
+  top: 10%;
+}
+/* line 175, style.less */
+.cloud-img__3 {
+  left: 36px;
+  bottom: -511px;
+}
+/* line 179, style.less */
+.cloud-img__4 {
+  left: 1300px;
+  bottom: -530px;
+}

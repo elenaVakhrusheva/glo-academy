@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- Ссылка на сайт parallax (фон): https://dixonandmoe.com/rellax/ -->
+    <div class="rellax">
+      I’m that default chill speed of "-2"
+    </div>
+    <div class="rellax" data-rellax-speed="7">
+      <img src="images/layer1.png">
+    </div>
+    <div class="rellax" data-rellax-speed="-4">
+      I’m extra slow and smooth
+    </div>
+  
+   <script src="js/rellax.min.js"></script>
+   <script>
+  
+      var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false 
+      });
+    </script>
+      
+</body>
+</html>
